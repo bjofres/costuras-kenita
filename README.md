@@ -1,21 +1,37 @@
-# Entre Costuras · Taller de Costura — Fase 1
+# Costuras Kenita · Taller de Costura en Maipú
 
-Landing bonita de una sola página para una costurera (ropa casual/arreglos, vestir formal, vestidos, colegio y actividades). Con máquina de coser SVG animada incluida. 🧵
+Landing de una sola página para el taller **Costuras Kenita** (Las Águilas 664, Maipú): arreglos de ropa casual, vestir formal y todo lo del colegio — con máquina de coser ilustrada y animada en SVG. 🧵
 
-## Abrir el sitio
-Doble clic en **`index.html`**. No requiere build ni servidor.
+🌐 **Demo:** https://bjofres.github.io/costuras-kenita/
 
-## Personalizar (2 minutos)
-Todo lo cambiable está en `app.js → const SITE`:
-- `whatsapp`: número real con código país, sin `+` (ej: `56912345678`).
-- El nombre del taller aparece en `index.html` (busca “Entre Costuras”).
+## Qué incluye
+
+- Hero con máquina de coser SVG animada (aguja, hilo y carrete en movimiento)
+- Servicios: casual y arreglos, vestir formal, colegio y actividades
+- Trabajos, reseñas reales de Google Maps, preguntas frecuentes
+- Mapa de ubicación + botón de WhatsApp (+56 9 3090 6255)
+- Formulario de cotización que arma el mensaje y abre WhatsApp
+- 100% responsive, sin frameworks ni build
+
+## Ver el sitio
+
+Doble clic en **`index.html`**. No requiere servidor ni instalación.
+
+## Personalizar
+
+- **WhatsApp:** en `app.js`, objeto `SITE` → campo `whatsapp` (código país + número, sin `+`).
+- **Nombre, dirección y textos:** directo en `index.html`.
+- **Colores y tipografías:** variables en `:root` de `styles.css`.
 
 ## Estructura
+
 ```
-index.html, styles.css, app.js
-docs/SPEC.md, ARCHITECTURE.md, PLAN.md, REVIEW.md, QA_REPORT.md
-docs/adr/ADR-001-sitio-estatico-fase-1.md
+index.html   # Contenido y estructura
+styles.css   # Diseño (variables, responsive, animaciones)
+app.js       # Interacciones (menú, formulario → WhatsApp, contadores)
+assets/      # Reservado para fotos reales
 ```
 
-## Fase 2 (ideas)
-Fotos reales, número/Instagram reales, agenda online, catálogo por tallas, migración a Nuxt 3 + Tailwind (tokens ya listos en `styles.css :root`).
+## Estado
+
+Fase 1 terminada. Ideas para Fase 2: fotos reales, agenda online y migración a Nuxt 3 + Tailwind.
